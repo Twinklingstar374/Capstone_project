@@ -9,6 +9,7 @@ body {
 
 
 /* header part */
+
 header {
     height:50px;
     background:#000000;
@@ -18,7 +19,7 @@ header {
     padding:16px 48px;
 }
 .logo {
-    font-family: MuseoModerno;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 42px;
     font-weight: 500;
     line-height: 42px;
@@ -40,15 +41,9 @@ header {
     text-decoration: none; 
     transition: 0.3s;
     transform-origin: center;
-    font-family: Chivo;
     font-size: 28px;
     font-weight: 400;
     line-height: 32px;
-    letter-spacing: 0em;
-    text-align: left;
-    text-underline-position: from-font;
-    text-decoration-skip-ink: none;
-
 }
 
 .pagelink a:hover {
@@ -66,11 +61,10 @@ header {
 /* MAIN project */
 
 
-
 .page {
-    padding: 72px 0px 72px 0px;
-    border: 0px 0px 1px 0px;
-    background: #000000;
+    padding: 72px 0px;
+    border-bottom: 1px ;
+    background-color: #000000;
     text-align: center;
 }
 .style {
@@ -78,18 +72,15 @@ header {
     height: 240px; 
     font-family: Chivo;
     font-size: 120px;
-    font-weight: 900;
+    font-weight:bold;
     line-height: 120px;
     letter-spacing: -0.02em;
     text-align: center;
-    text-underline-position: from-font;
-    text-decoration-skip-ink: none;
     color:white; 
 }
 
 img {
     border-radius: 22px;
-    border: 1px 0px 0px 0px;
     border-top: 1px solid #FFFFFF
 }
 img:hover {
@@ -97,11 +88,10 @@ img:hover {
 }
 
 .rows {
-    width:Fill(1,344px)px;
-    height:Fixed(429px)px;
-    padding: 48px 0px 48px 0px;
+    width:1,344px;
+    height:429px;
+    padding: 48px 0px;
     gap: 48px;
-    opacity: 0px;
     background: #000000;
     display: grid;
     grid-template-columns: repeat(3,auto);
@@ -109,10 +99,9 @@ img:hover {
     grid-gap:80px;
 }
 .projectimage  {
-    width: Fill (416px)px;
-    height: Fixed (333px)px;
+    width: 416px;
+    height: 333px;
     gap: 8px;
-    opacity: 0px;
 }
 .new {
     width: 416px;
@@ -130,7 +119,7 @@ img:hover {
 .p1 {
     width: 416px;
     height: 24px;
-    font-family: Archivo;
+    font-family: var(--logo-font);
     font-size: 20px;
     font-weight: 500;
     line-height: 24px;
@@ -139,7 +128,7 @@ img:hover {
 .p2 {
     width: 416px;
     height: 24px;
-    font-family: Archivo;
+    font-family: var(--logo-font);
     font-size: 17px;
     font-weight: 500;
     line-height: 24px;
@@ -158,19 +147,16 @@ img:hover {
     padding-bottom: 72px;
     border-bottom:1px;
     background:black;
-    /* display: flex; */
-    justify-content: center;
-    align-content: center;
 }
+
 .text {
     width: 672px;
     height: 312px;
-    font-family: Chivo;
+    font-family: var(--logo-font);
     font-size: 48px;
     font-weight: 400;
     line-height: 52px;
     letter-spacing: -0.01em;
-    text-align: left;
     color:#FFFFFF;
     margin-left: 45px;
 }
@@ -203,50 +189,43 @@ img:hover {
     width: 400px;
     height: 32px;
     gap: 8px;
-    font-family: Chivo;
+    font-family: var(--logo-font);
     font-size: 28px;
     font-weight: 900;
     line-height: 32px;
     letter-spacing: -0.01em;
     text-align: center;
-    text-underline-position: from-font;
-    text-decoration-skip-ink: none;
     color:#FFFFFF
 }
+
 .blank {
     width: 400px;
     height: 20px;
-    gap: 0px;
-    opacity: 0px;
-    font-family: Archivo;
+    font-family:var(--logo-font);
     font-size: 15px;
     font-weight: 500;
     line-height: 20px;
-    text-align: center;
-    text-underline-position: from-font;
-    text-decoration-skip-ink: none;
 }
+
 .input {
     width: 600px;
     height: 64px;
     gap: 12px;
     display: flex;
 }
+
 .in {
     width: 56px;
     height: 64px;
-    padding-top:8px;
-    padding-right: 16px;
-    padding-bottom: 8px;
-    padding-left: 16px;
+    padding-top:8px 16px; 
     border-radius: 8px;
-    background: #0a0a0a;
+    background-color: #0a0a0a;
     border: 1px solid #FFFFFF;
 }
 .r {
     width: 12px;
     height: 24px;
-    font-family: Archivo;
+    font-family:var(--logo-font) ;
     font-size: 20px;
     font-weight: 500;
     line-height: 24px;
@@ -256,30 +235,24 @@ img:hover {
 .submit {
     width: 400px;
     height:36px;
-    padding: 8px 16px 8px 16px;
+    padding: 8px 16px;
     border-radius: 8px;
     background: #928DD3;
-    font-family: Archivo;
+    font-family: var(--logo-font);
     font-size: 15px;
     font-weight: 600;
     line-height: 20px;
-    text-underline-position: from-font;
-    text-decoration-skip-ink: none;
+
 }
 
 .skip {
     width: 31px;
     height: 20px;
-    gap: 0px;
-    opacity: 0px;
-    font-family: Archivo;
+    font-family: var(--logo-font);
     font-size: 15px;
     font-weight: 600;
     line-height: 20px;
     text-align:center;
-    align-items: center;
-    text-underline-position: from-font;
-    text-decoration-skip-ink: none;
     color:#928DD3;
 }
 
@@ -310,7 +283,7 @@ footer .container .btn {
     border: 1.5px solid #A3A3A333;
     padding: 14px 32px;
     border-radius: 8px;
-    /* transition: .5s; */
+    transition: .5s;
     font-family: var(--primary-font);
     font-size: 20px;
     font-weight: 500;
@@ -323,6 +296,7 @@ footer .container .btn:hover {
 }
 
 
+/* contacts */
 
 #contact {
     display: flex;
@@ -421,6 +395,7 @@ footer .container .btn:hover {
     cursor: pointer;
 }
 
+/* Responsive */
 @media screen and (max-width:1024px) {
     body{
         width:1500px;
